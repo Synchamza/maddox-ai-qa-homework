@@ -5,6 +5,6 @@ export default defineConfig({
   timeout: 30000,
   use: {
     baseURL: 'http://localhost:3000',
-    headless: true,
+    headless: true, // Tests run without opening a real browser window
   },
 });
