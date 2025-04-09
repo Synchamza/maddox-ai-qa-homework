@@ -20,4 +20,7 @@ test('Logout takes user back to login', async ({ page }) => {
   // Confirm that the login UI is shown again
   await expect(page.getByRole('button', { name: 'Login' })).toBeVisible();
 
+  // Confirm that the user is redirected to the login page
+  await expect(page).toHaveURL('http://localhost:3000/login');
+
 });
